@@ -27,25 +27,25 @@ public class DubboStatistics implements Serializable {
 
     private String method;
 
-    private double consumerSuccess;
+    private int consumerSuccess;
 
-    private double providerSuccess;
+    private int providerSuccess;
 
-    private double consumerFailure;
+    private int consumerFailure;
 
-    private double providerFailure;
+    private int providerFailure;
 
-    private double consumerAvgElapsed;
+    private int consumerAvgElapsed;
 
-    private double providerAvgElapsed;
+    private int providerAvgElapsed;
 
-    private double consumerMaxElapsed;
+    private int consumerMaxElapsed;
 
-    private double providerMaxElapsed;
+    private int providerMaxElapsed;
 
-    private double consumerMaxConcurrent;
+    private int consumerMaxConcurrent;
 
-    private double providerMaxConcurrent;
+    private int providerMaxConcurrent;
 
     public String getMethod() {
         return method;
@@ -55,83 +55,83 @@ public class DubboStatistics implements Serializable {
         this.method = method;
     }
 
-    public double getConsumerSuccess() {
+    public int getConsumerSuccess() {
         return consumerSuccess;
     }
 
-    public void setConsumerSuccess(double consumerSuccess) {
+    public void setConsumerSuccess(int consumerSuccess) {
         this.consumerSuccess = consumerSuccess;
     }
 
-    public double getProviderSuccess() {
+    public int getProviderSuccess() {
         return providerSuccess;
     }
 
-    public void setProviderSuccess(double providerSuccess) {
+    public void setProviderSuccess(int providerSuccess) {
         this.providerSuccess = providerSuccess;
     }
 
-    public double getConsumerFailure() {
+    public int getConsumerFailure() {
         return consumerFailure;
     }
 
-    public void setConsumerFailure(double consumerFailure) {
+    public void setConsumerFailure(int consumerFailure) {
         this.consumerFailure = consumerFailure;
     }
 
-    public double getProviderFailure() {
+    public int getProviderFailure() {
         return providerFailure;
     }
 
-    public void setProviderFailure(double providerFailure) {
+    public void setProviderFailure(int providerFailure) {
         this.providerFailure = providerFailure;
     }
 
-    public double getConsumerAvgElapsed() {
+    public int getConsumerAvgElapsed() {
         return consumerAvgElapsed;
     }
 
-    public void setConsumerAvgElapsed(double consumerAvgElapsed) {
+    public void setConsumerAvgElapsed(int consumerAvgElapsed) {
         this.consumerAvgElapsed = consumerAvgElapsed;
     }
 
-    public double getProviderAvgElapsed() {
+    public int getProviderAvgElapsed() {
         return providerAvgElapsed;
     }
 
-    public void setProviderAvgElapsed(double providerAvgElapsed) {
+    public void setProviderAvgElapsed(int providerAvgElapsed) {
         this.providerAvgElapsed = providerAvgElapsed;
     }
 
-    public double getConsumerMaxElapsed() {
+    public int getConsumerMaxElapsed() {
         return consumerMaxElapsed;
     }
 
-    public void setConsumerMaxElapsed(double consumerMaxElapsed) {
+    public void setConsumerMaxElapsed(int consumerMaxElapsed) {
         this.consumerMaxElapsed = consumerMaxElapsed;
     }
 
-    public double getProviderMaxElapsed() {
+    public int getProviderMaxElapsed() {
         return providerMaxElapsed;
     }
 
-    public void setProviderMaxElapsed(double providerMaxElapsed) {
+    public void setProviderMaxElapsed(int providerMaxElapsed) {
         this.providerMaxElapsed = providerMaxElapsed;
     }
 
-    public double getConsumerMaxConcurrent() {
+    public int getConsumerMaxConcurrent() {
         return consumerMaxConcurrent;
     }
 
-    public void setConsumerMaxConcurrent(double consumerMaxConcurrent) {
+    public void setConsumerMaxConcurrent(int consumerMaxConcurrent) {
         this.consumerMaxConcurrent = consumerMaxConcurrent;
     }
 
-    public double getProviderMaxConcurrent() {
+    public int getProviderMaxConcurrent() {
         return providerMaxConcurrent;
     }
 
-    public void setProviderMaxConcurrent(double providerMaxConcurrent) {
+    public void setProviderMaxConcurrent(int providerMaxConcurrent) {
         this.providerMaxConcurrent = providerMaxConcurrent;
     }
 }

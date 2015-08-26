@@ -15,7 +15,8 @@
  */
 package com.handu.open.dubbo.monitor.domain;
 
-import org.springframework.util.StringUtils;
+
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -42,19 +43,19 @@ public class DubboInvoke implements Serializable {
 
     private String type;
 
-    private double success;
+    private int success;
 
-    private double failure;
+    private int failure;
 
-    private double elapsed;
+    private int elapsed;
 
-    private double concurrent;
+    private int concurrent;
 
-    private double maxElapsed;
+    private int maxElapsed;
 
-    private double maxConcurrent;
+    private int maxConcurrent;
 
-    private double invokeTime;
+    private long invokeTime;
 
     // ====================查询辅助参数===================
     /**
@@ -106,17 +107,6 @@ public class DubboInvoke implements Serializable {
         this.provider = provider;
     }
 
-    public String getType() {
-        if (StringUtils.isEmpty(type)) {
-            return "provider";
-        }
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
     public String getId() {
         return id;
     }
@@ -125,11 +115,75 @@ public class DubboInvoke implements Serializable {
         this.id = id;
     }
 
-    public Long getTimeParticle() {
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getSuccess() {
+        return success;
+    }
+
+    public void setSuccess(int success) {
+        this.success = success;
+    }
+
+    public int getFailure() {
+        return failure;
+    }
+
+    public void setFailure(int failure) {
+        this.failure = failure;
+    }
+
+    public int getElapsed() {
+        return elapsed;
+    }
+
+    public void setElapsed(int elapsed) {
+        this.elapsed = elapsed;
+    }
+
+    public int getConcurrent() {
+        return concurrent;
+    }
+
+    public void setConcurrent(int concurrent) {
+        this.concurrent = concurrent;
+    }
+
+    public int getMaxElapsed() {
+        return maxElapsed;
+    }
+
+    public void setMaxElapsed(int maxElapsed) {
+        this.maxElapsed = maxElapsed;
+    }
+
+    public int getMaxConcurrent() {
+        return maxConcurrent;
+    }
+
+    public void setMaxConcurrent(int maxConcurrent) {
+        this.maxConcurrent = maxConcurrent;
+    }
+
+    public long getInvokeTime() {
+        return invokeTime;
+    }
+
+    public void setInvokeTime(long invokeTime) {
+        this.invokeTime = invokeTime;
+    }
+
+    public long getTimeParticle() {
         return timeParticle;
     }
 
-    public void setTimeParticle(Long timeParticle) {
+    public void setTimeParticle(long timeParticle) {
         this.timeParticle = timeParticle;
     }
 
@@ -147,66 +201,5 @@ public class DubboInvoke implements Serializable {
 
     public void setInvokeDateTo(Date invokeDateTo) {
         this.invokeDateTo = invokeDateTo;
-    }
-
-
-    public double getSuccess() {
-        return success;
-    }
-
-    public void setSuccess(double success) {
-        this.success = success;
-    }
-
-    public double getFailure() {
-        return failure;
-    }
-
-    public void setFailure(double failure) {
-        this.failure = failure;
-    }
-
-    public double getElapsed() {
-        return elapsed;
-    }
-
-    public void setElapsed(double elapsed) {
-        this.elapsed = elapsed;
-    }
-
-    public double getConcurrent() {
-        return concurrent;
-    }
-
-    public void setConcurrent(double concurrent) {
-        this.concurrent = concurrent;
-    }
-
-    public double getMaxElapsed() {
-        return maxElapsed;
-    }
-
-    public void setMaxElapsed(double maxElapsed) {
-        this.maxElapsed = maxElapsed;
-    }
-
-    public double getMaxConcurrent() {
-        return maxConcurrent;
-    }
-
-    public void setMaxConcurrent(double maxConcurrent) {
-        this.maxConcurrent = maxConcurrent;
-    }
-
-    public void setTimeParticle(long timeParticle) {
-        this.timeParticle = timeParticle;
-    }
-
-    public double getInvokeTime() {
-        return invokeTime;
-    }
-
-    public void setInvokeTime(double invokeTime) {
-        this.invokeTime = invokeTime;
     }
 }

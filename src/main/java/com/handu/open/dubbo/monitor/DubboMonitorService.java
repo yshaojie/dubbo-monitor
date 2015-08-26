@@ -26,8 +26,8 @@ import com.google.common.collect.Maps;
 import com.handu.open.dubbo.monitor.domain.DubboInvoke;
 import com.handu.open.dubbo.monitor.support.Dao;
 import com.handu.open.dubbo.monitor.support.UuidUtil;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.StringUtils;
 
 import javax.annotation.PostConstruct;
 import java.text.SimpleDateFormat;
